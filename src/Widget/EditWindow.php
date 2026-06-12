@@ -77,7 +77,7 @@ class EditWindow extends \Ge\Panel\Widget\EditWindow
         ];
         $this->layout = 'fit';
         $this
-            ->addCss(RG_DEBUG ? '/form.css' : '/form.min.css');
+            ->addCss(GE_DEBUG ? '/form.css' : '/form.min.css');
     }
 
     /**
