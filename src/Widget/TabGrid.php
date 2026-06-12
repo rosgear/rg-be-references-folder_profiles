@@ -140,7 +140,7 @@ class TabGrid extends \Ge\Panel\Widget\TabGrid
         ]);
 
         $this
-            ->addCss(RG_DEBUG ? '/grid.css' : '/grid.min.css')
+            ->addCss(GE_DEBUG ? '/grid.css' : '/grid.min.css')
             ->addRequire('Ge.view.grid.column.Switch');
     }
 
