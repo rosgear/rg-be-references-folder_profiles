@@ -1,0 +1,26 @@
+{
+    "name": "rosgear/rg-be-references-folder_profiles",
+    "description": "Extension (module) \"Media folder profiles\" for the GePanel Control Panel",
+    "keywords": ["rosgear", "gepanel", "extension (module)"],
+    "homepage": "https://rosgear.ru/component/rg-be-references-folder_profiles/",
+    "type": "component",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anton Tivonenko",
+            "email": "anton.tivonenko@gmail.com",
+            "homepage": "https://rosgear.ru/"
+        }
+    ],
+    "require": {
+        "rosgear/ge2-composer-plugin": "*"
+    },
+    "extra": {
+        "ge": {
+            "id": "rg.be.references.folder_profiles",
+            "vendor": "ge"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
