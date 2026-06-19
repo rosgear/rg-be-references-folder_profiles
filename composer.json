@@ -1,7 +1,7 @@
 {
     "name": "rosgear/rg-be-references-folder_profiles",
-    "description": "Extension (module) \"Media folder profiles\" for the GePanel Control Panel",
-    "keywords": ["rosgear", "gepanel", "extension (module)"],
+    "description": "Module extension \"Media folder profiles\" for the GePanel Control Panel",
+    "keywords": ["rosgear", "gepanel", "module", "extension"],
     "homepage": "https://rosgear.ru/component/rg-be-references-folder_profiles/",
     "type": "component",
     "license": "MIT",
