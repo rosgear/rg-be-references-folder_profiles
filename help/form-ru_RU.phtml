@@ -15,23 +15,118 @@
     <div class="g-help-screen g-help-screen--hidable">
         <img src="<?= $assetsUrl, '/help/form.png' ?>" />
     </div>
-    <p>Форма появляется после нажатия на кнопку <b>"Добавить"</b> панели инструментов списка элементов или выбора пункта <b>"Редактировать"</b> контекстного меню выбранной записи.</p>
+    <p>Форма появляется после нажатия на кнопку <b>"Добавить"</b> панели инструментов <a href="<?= $url('grid') ?>">списка профилей медиапапок</a> или выбора пункта <b>"Редактировать"</b> контекстного меню выбранной записи.</p>
     <h2>Вкладки формы</h2>
     <h3>Вкладка формы "Общее"</h3>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua и 
-имеет следующие поля:</p>
+    <p>Общие настройки профиля медиапапки задаются следующими полями:</p>
     <ul class="g-help-list">
-        <li><b>Название.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Тип элемента.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Доступен.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Название.</b> Название профиля медиапапки;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Доступен.</b> Если флаг не установлен, профиль медиапапки не будет отображаться пользователю.</li>
     </ul>
 
     <h3>Вкладка формы "Разрешения"</h3>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    <p>Разрешения на выполнение действий с папками и файлами определяются следующими полями:</p>
+    <ul class="g-help-list">
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Загружать файлы.</b> При установленном флаге становится возможным загрузка файла;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Скачивать файлы.</b> При установленном флаге становится возможным скачивать файлы;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Удалять файлы / папки.</b> При установленном флаге становится возможным удалять файлы и папки;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Создавать файлы.</b> При установленном флаге становится возможным создавать файлы;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Создавать папки.</b> При установленном флаге становится возможным создавать папки;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Архивировать файлы / папки.</b> При установленном флаге становится возможным архивировать файлы и папки;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Разархивировать.</b> При установленном флаге становится возможным выполнять разархивирование;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Переименовывать файлы / папки.</b> При установленном флаге становится возможным переименовывать файлы и папки;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Редактировать файлы.</b> При установленном флаге становится возможным редактировать файлы;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Просматривать файлы.</b> При установленном флаге становится возможным просматривать файлы;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Изменять права доступа.</b> При установленном флаге становится возможным изменять права доступа к файлам;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Просматривать атрибуты файлов / папок.</b> При установленном флаге становится возможным просматривать атрибуты файлов и папок.</li>
+    </ul>
 
     <h3>Вкладка формы "Вид"</h3>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    <p>Параметры отображения папок и файлов для текущего профиля задаются следующими полями:</p>
+    <ul class="g-help-list">
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Показывать подпапки.</b> При установленном флаге становится возможным просмотр подпапок;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Показывать файлы подпапок.</b> При установленном флаге становится возможным показывать файлы подпапок;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Показывать папки без доступа.</b> При установленном флаге становится возможным показывать папки без доступа;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Показывать файлы VCS.</b> При установленном флаге становится возможным показывать файлы VCS;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Показывать файлы и папки с точкой.</b> При установленном флаге становится возможным показывать файлы и папки с точкой;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Показывать файлы соответствующие папке.</b> При установленном флаге становится возможным показывать файлы соответствующие папке.</li>
+    </ul>
+
 
     <h3>Вкладка формы "Загрузка"</h3>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    <p>Параметры загрузки файла определяются следующими полями:</p>
+    <ul class="g-help-list">
+        <li><u>Правила загрузки файла</u></li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Проверять расширение файла.</b> При установленном флаге выполняется проверка расширения загружаемого файла;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Проверять MIME-тип содержимого файла.</b> При установленном флаге выполняется проверка MIME-тип содержимого файла;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Проверяемые расширения файлов.</b> Список допустимых расширений файлов для загрузки.</li>
+        <li><u>Новое имя файла после загрузки</u></li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Транслитерация имени файла.</b> При установленном флаге выполняется транслитерация имени файла после его загрузки;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Формирование уникального имени файла.</b> При установленном флаге выполняется формирование уникального имени файла после его загрузки;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Исключить специальные символы:.</b> При установленном флаге исключаются специальные символы из имени файла;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Имя файла в нижнем регистре.</b> При установленном флаге имя файла  переводится в нижний регистр;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Заменить специальные символы на.</b> Указывается символ‑заменитель (по умолчанию — "-"), используемый вместо специальных символов;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Максимальная длина имени файла.</b> Задаётся максимальная длина имени файла. При превышении указанного значения имя будет автоматически усечено.</li>
+        <li><u>Шаблон создания папки загруженных файлов</u>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Шаблон.</b> Шаблон определяет путь для загрузки файла в указанный каталог. 
+            В шаблоне задаются параметры в символьном виде — в них автоматически подставляются соответствующие значения.<br>
+            Символы в шаблоне:
+            <ul>
+                <li><code>{Year}</code> - номер года, 2 цифры;</li>
+                <li><code>{year}</code> - полное числовое представление года, не менее 4 цифр;</li>
+                <li><code>{Month}</code> - порядковый номер месяца без ведущего нуля (например, от 1 до 12 );</li>
+                <li><code>{month}</code> - порядковый номер месяца с ведущим нулём (например, от 01 до 12 );</li>
+                <li><code>{Day}</code> - день месяца без ведущего нуля (например, от 1 до 31 );</li>
+                <li><code>{day}</code> - день месяца, 2 цифры с ведущим нулём (например, от 01 до 31 );</li>
+                <li><code>{ID}</code> - идентификатор объекта (например, материала), которому принадлежит загружаемый файл.</li>
+            </ul>
+        </li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Создать папку и переместить туда файлы:.</b> При установленном флаге будет создан каталог (папка), соответствующий заданному шаблону, в который будет производиться загрузка файла.</li>
+    </ul>
+
+    <h3>Вкладка формы "Изображение"</h3>
+    <p>Вкладка отображается только при добавлении или редактировании профиля папки с типом данных "Изображение".</p>
+    <ul class="g-help-list">
+        <li><u>Размер миниатюры</u></li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Максимальная ширина, пкс.</b> Максимальная ширина миниатюры в пикселях;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Максимальная высота, пкс.</b> Максимальная высота миниатюры в пикселях;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Слаг.</b> Слаг - это уникальная строка-идентификатор, подставляемая в названии файла миниатюры.<br>
+        Пример: sample.jpg → sample_thumb.jpg</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Обрезать изображение по размеру.</b> Установленный флаг указывает на необходимость обрезки изображения, если его размеры превышают заданные максимальные значения ширины и высоты;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Добавить водяной знак.</b> При установленном флаге на миниатюру добавляется водяной знак;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Создать.</b> При установленном флаге из загруженного изображения создаётся миниатюра.</li>
+
+        <li><u>Средний размер</u></li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Максимальная ширина, пкс.</b> Максимальная ширина для изображения среднего размера задаётся в пикселях;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Максимальная высота, пкс.</b> Максимальная высота для изображения среднего размера задаётся в пикселях;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Слаг.</b> Слаг - это уникальная строка-идентификатор, подставляемая в названии файла изображения среднего размера.<br>
+        Пример: sample.jpg → sample_medium.jpg</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Обрезать изображение по размеру.</b> Установленный флаг указывает на необходимость обрезки изображения, если его размеры превышают заданные максимальные значения ширины и высоты;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Добавить водяной знак.</b> При установленном флаге на изображение среднего размера добавляется водяной знак;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Создать.</b> При установленном флаге из загруженного изображения создаётся изображение среднего размера.</li>
+
+        <li><u>Крупный размер</u></li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Максимальная ширина, пкс.</b> Максимальная ширина для изображения крупного размера задаётся в пикселях;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Максимальная высота, пкс.</b> Максимальная высота для изображения крупного размера задаётся в пикселях;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Слаг.</b> Слаг - это уникальная строка-идентификатор, подставляемая в названии файла изображения крупного размера.<br>
+        Пример: sample.jpg → sample_large.jpg</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Обрезать изображение по размеру.</b> Установленный флаг указывает на необходимость обрезки изображения, если его размеры превышают заданные максимальные значения ширины и высоты;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Добавить водяной знак.</b> При установленном флаге на изображение крупного размера добавляется водяной знак;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Создать.</b> При установленном флаге из загруженного изображения создаётся изображение крупного размера.</li>
+
+        <li><u>Оригинальный размер</u></li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Максимальная ширина, пкс.</b> Максимальная ширина для оригинального  изображения задаётся в пикселях;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Максимальная высота, пкс.</b> Максимальная высота для оригинального изображения задаётся в пикселях;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Обрезать изображение по размеру.</b> Установленный флаг указывает на необходимость обрезки изображения, если его размеры превышают заданные максимальные значения ширины и высоты;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Добавить водяной знак.</b> При установленном флаге на оригинальное изображение добавляется водяной знак;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Применить.</b> При установленном флаге к оригинальному изображению применяются параметры, указанные выше.</li>
+
+        <li><u>Водяной знак</u></li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Файл.</b> Задаётся путь к файлу изображения, используемого в качестве водяного знака. В пути допускается использование псевдонимов,<br> 
+        например: @published/uploads/img/watermark.png → /public/uploads/img/watermark.png;</li>
+        <li><b>Прозрачность.</b> Устанавливается прозрачность водяного знака на изображении в диапазоне от 0 до 100 %;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Положение.</b> Положение водяного знака относительно изображения;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Смещение по горизонтали, пкс.</b> Задаётся горизонтальное смещение водяного знака относительно изображения, значение указывается в пикселях;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Смещение по вертикали, пкс.</b> Задаётся вертикальное смещение водяного знака относительно изображения, значение указывается в пикселях.</li>
+    </ul>
 </article>

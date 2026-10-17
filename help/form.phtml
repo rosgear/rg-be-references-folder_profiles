@@ -15,21 +15,122 @@
     <div class="g-help-screen g-help-screen--hidable">
         <img src="<?= $assetsUrl, '/help/form.png' ?>" />
     </div>
-    <p>The form appears after clicking the <b>"Add"</b> button on the elements list toolbar or selecting the <b>"Edit"</b> item from the context menu of the selected entry.</p>
+    <p>The form appears after clicking the <b>"Add"</b> button on <a href="<?= $url('grid') ?>">the elements list</a> toolbar or selecting the <b>"Edit"</b> item from the context menu of the selected entry.</p>
     <h2>Form tabs</h2>
     <h3>Form tab "Common"</h3>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua and has the following fields:</p>
+    <p>General settings for the media folder profile are defined by the following fields:</p>
     <ul class="g-help-list">
-        <li><b>Name.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Enabled</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Name.</b> The name of the media folder profile;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Enabled.</b> If this box is not checked, the media folder profile will not be visible to the user.</li>
     </ul>
 
     <h3>Form tab "Permissions"</h3>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    <p>Permissions for performing actions on folders and files are determined by the following fields:</p>
+    <ul class="g-help-list">
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Upload files.</b> When this flag is set, uploading files becomes possible;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Download files.</b> When this flag is set, downloading files becomes possible;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Delete files / folders.</b> When this flag is set, deleting files and folders becomes possible;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Create files.</b> When this flag is set, creating files becomes possible;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Create folders.</b> When this flag is set, creating folders becomes possible;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Archive files / folders.</b> When this flag is set, archiving files and folders becomes possible;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Extract archives.</b> When this flag is set, extracting archives becomes possible;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Rename files / folders.</b> When this flag is set, renaming files and folders becomes possible;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Edit files.</b> When this option is selected, editing files becomes possible;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>View files.</b> When this option is selected, viewing files becomes possible;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Change access rights.</b> When this option is selected, changing file access rights becomes possible;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>View file/folder attributes.</b> When this option is selected, viewing file and folder attributes becomes possible.</li>
+    </ul>
 
     <h3>Form tab "Interface"</h3>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    <p>Folder and file display settings for the current profile are defined by the following fields:</p>
+    <ul class="g-help-list">
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Show subfolders.</b> When selected, subfolders are displayed;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Show subfolder files.</b> When selected, files within subfolders are displayed;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Show inaccessible folders.</b> When selected, folders without access rights are displayed;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Show VCS files.</b> When selected, VCS files are displayed;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Show dotfiles and dotfolders.</b> When selected, files and folders starting with a dot are displayed;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Show files corresponding to the folder.</b> When selected, files corresponding to the folder are displayed.</li>
+    </ul>
 
     <h3>Form tab "Upload"</h3>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    <p>File upload parameters are defined by the following fields:</p>
+    <ul class="g-help-list">
+        <li><u>File upload rules</u></li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Check file extension.</b> If checked, the uploaded file's extension is verified;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Check file content MIME type.</b> If checked, the file content's MIME type is verified;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>File extensions to check.</b> A list of allowed file extensions for upload.</li>
+        <li><u>New filename after upload</u></li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Transliterate filename.</b> If checked, the filename is transliterated after upload;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Generate unique filename.</b> If checked, a unique filename is generated after upload;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Exclude special characters.</b> If checked, special characters are removed from the filename;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Lowercase filename.</b> If checked, the filename is converted to lowercase;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Replace special characters with.</b> Specifies... replacement character (default: "-") used instead of special characters;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Maximum file name length.</b> Specifies the maximum length for the file name. If the specified value is exceeded, the name will be automatically truncated.</li>
+        <li><u>Upload folder creation template</u>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Template.</b> The template defines the path for uploading the file to the specified directory. 
+            Parameters are specified in the template as placeholders, which are automatically replaced with the corresponding values.<br>
+            Template placeholders:
+            <ul>
+                <li><code>{Year}</code> - year number, 2 digits;</li>
+                <li><code>{year}</code> - full numeric representation of the year, at least 4 digits;</li>
+                <li><code>{Month}</code> - month number without a leading zero (e.g., 1 to 12);</li>
+                <li><code>{month}</code> - month number with a leading zero (e.g., 01 to 12);</li>
+                <li><code>{Day}</code> - day of the month without a leading zero (e.g., 1 to 31);</li>
+                <li><code>{day}</code> - day of the month, 2 digits with a leading zero (e.g., 01 to 31);</li>
+                <li><code>{ID}</code> - identifier of the object (e.g., content item) to which the uploaded file belongs.</li>
+            </ul>
+        </li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Create folder and move files there:.</b> If this option is selected, a directory (folder) corresponding to the specified template will be created, and the file will be uploaded into it.</li>
+    </ul>
+
+    <h3>Form tab "Image"</h3>
+    <p>This tab appears only when adding or editing a folder profile with the "Image" data type.</p>
+    <ul class="g-help-list">
+        <li><u>Thumbnail Size</u></li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Max width, px.</b> The maximum width of the thumbnail in pixels;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Max height, px.</b> The maximum height of the thumbnail in pixels;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Slug.</b> The slug is a unique identifier string inserted into the thumbnail filename.<br>
+        Example: sample.jpg → sample_thumb.jpg</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Crop image to size.</b> Checking this box indicates that the image should be cropped if its dimensions exceed the specified maximum width and height;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Add watermark.</b> Checking this box adds a watermark to the thumbnail;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Create.</b> Checking this box creates a thumbnail from the uploaded image.</li>
+
+        <li><u>Medium size</u></li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Max width, px.</b> The maximum width for the medium-sized image is specified in pixels;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Max height, px.</b> The maximum height for the medium-sized image is specified in pixels;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Slug.</b> A slug is a unique identifier string added to the filename of the medium-sized image.<br>
+        Example: sample.jpg → sample_medium.jpg</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Crop image to size.</b> Checking this box indicates that the image should be cropped if its dimensions exceed the specified maximum width and height;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Add watermark.</b> If checked, a watermark is added to the medium-sized image;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Create.</b> If checked, a medium-sized image is created from the uploaded image.</li> pixels;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Slug.</b> A slug is a unique identifier string inserted into the filename of the medium-sized image.<br>
+        Example: sample.jpg → sample_medium.jpg</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Crop image to size.</b> Checking this box indicates that the image should be cropped if its dimensions exceed the specified maximum width and height;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Add watermark.</b> Checking this box adds a watermark to the medium-sized image;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Create.</b> Checking this box creates a medium-sized image from the uploaded image.</li>
+
+        <li><u>Large size</u></li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Maximum width, px.</b> The maximum width for the large-sized image is specified in pixels;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Maximum height, px.</b> The maximum height for the large-sized image is specified in pixels;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Slug.</b> A slug is a unique identifier string added to the large-sized image's filename.<br>
+        Example: sample.jpg → sample_large.jpg</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Crop image to size.</b> Checking this box indicates that the image should be cropped if its dimensions exceed the specified maximum width and height;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Add watermark.</b> Checking this box adds a watermark to the large-sized image;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Create.</b> Checking this box creates a large-sized image from the uploaded image.</li>
+
+        <li><u>Original size</u></li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Maximum width, px.</b> The maximum width for the original image is specified in pixels;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Maximum height, px.</b> The maximum height for the original image is specified in pixels;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Crop image to size.</b> Checking this box indicates that the image should be cropped if its dimensions exceed the specified maximum width and height values;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Add watermark.</b> Checking this box adds a watermark to the original image;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Apply.</b> Checking this box applies the settings specified above to the original image.</li>
+
+        <li><u>Watermark</u></li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>File.</b> Specifies the path to the image file used as the watermark. Aliases may be used in the path,<br>
+        for example: @published/uploads/img/watermark.png → /public/uploads/img/watermark.png;</li>
+        <li><b>Transparency.</b> Sets the transparency of the watermark on the image, ranging from 0% to 100%;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Position.</b> The position of the watermark relative to the image;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Horizontal offset, px.</b> Sets the horizontal offset of the watermark relative to the image; the value is specified in pixels;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Vertical offset, px.</b> Sets the vertical offset of the watermark relative to the image; the value is specified in pixels.</li>
+    </ul>
 </article>
